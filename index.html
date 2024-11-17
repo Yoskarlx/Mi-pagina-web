@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="file:///C:/Users/yoska/Downloads/DALL%C2%B7E%202024-11-17%2019.27.43%20-%20A%20minimalist%20and%20sleek%20icon%20design%20for%20a%20tech-focused%20website%20named%20'TechNova'.%20The%20icon%20should%20feature%20a%20modern%20representation%20of%20a%20glowing%20star%20or%20n.webp" type="image/png" sizes="32x32">
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>TechNova</h1>
+
+            <nav class="main-menu">
+                <div class="menu-item" data-menu="home">
+                    <a href="#home">Inicio</a>
+                </div>
+                <div class="menu-item" data-menu="devices">
+                    <a href="#devices">Dispositivos</a>
+                </div>
+                <div class="menu-item" data-menu="services">
+                    <a href="#services">Servicios</a>
+                </div>
+                <div class="menu-item" data-menu="community">
+                    <a href="#community">Comunidad</a>
+                </div>
+                <div class="menu-item" data-menu="contact">
+                    <a href="#contact">Contacto</a>
+                </div>
+            </nav>
+            
+            <!-- Contenedor para las subopciones -->
+            <div class="submenu-container">
+                <div class="submenu" data-menu="home">
+                    <a href="#sub-home-1">Subinicio 1</a>
+                    <a href="#sub-home-2">Subinicio 2</a>
+                </div>
+                <div class="submenu" data-menu="devices">
+                    <a href="#sub-devices-1">Smartphones</a>
+                    <a href="#sub-devices-2">Tablets</a>
+                    <a href="#sub-devices-3">Accesorios</a>
+                </div>
+                <div class="submenu" data-menu="services">
+                    <a href="#sub-services-1">Manuales</a>
+                    <a href="#sub-services-2">FAQs</a>
+                </div>
+                <div class="submenu" data-menu="community">
+                    <a href="#sub-community-1">Foros</a>
+                    <a href="#sub-community-2">Eventos</a>
+                </div>
+                <div class="submenu" data-menu="contact">
+                    <a href="#sub-contact-1">Email</a>
+                    <a href="#sub-contact-2">Teléfono</a>
+                </div>
+            </div>
+        </div>
+        <div class="brand-logos">
+
+            <a href="https://www.apple.com/" target="_blank" title="Apple"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo" title="Apple"> </a>
+            <a href="https://www.samsung.com/" target="_blank" title="Samsung"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Samsung_Black_icon.svg" alt="Samsung Logo" title="Samsung"> </a>
+        <a href="https://www.mi.com/" target="_blank" title="Xiaomi"><img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Xiaomi_New_Font.svg" alt="Xiaomi Logo" title="Xiaomi"></a>
+    <a href="https://www.huawei.com/" target="_blank" title="Huawei"> <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Huawei_wordmark_2019.svg" alt="Huawei Logo" title="Huawei"></a>
+        </div>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="video-container">
+                <video autoplay muted loop>
+                    <source src="https://www.apple.com/105/media/ww/iphone/family/2024/cf19f185-dd7e-4350-97ff-e44860713b54/anim/welcome/xlarge_2x.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+                <div class="overlay-text">
+                    <h2>Explora lo Último en Tecnología</h2>
+                    <p>Conéctate, comparte y disfruta con los mejores dispositivos móviles.</p>
+                    <a href="#devices" class="btn">Ver Dispositivos</a>
+                </div>
+            </div>
+        </section>
+        <!-- Device Grid -->
+        <section id="devices" class="devices">
+            <h2>Últimos Dispositivos</h2>
+            <div class="device-grid">
+                <div class="device-card">
+                    <img src="https://www.apple.com/newsroom/images/2024/09/apple-debuts-iphone-16-pro-and-iphone-16-pro-max/article/Apple-iPhone-16-Pro-hero-240909_inline.jpg.large.jpg" alt="iPhone 16">
+                    <h3>iPhone 16</h3>
+                    <p>Rendimiento líder y diseño premium.</p>
+                    <button onclick="showDetails('iPhone 16')">Ver más</button>
+                </div>
+                <div class="device-card">
+                    <img src="https://casacuesta.com/media/catalog/product/cache/afcac67a0d77755283578b677f040f2b/3/3/3343049-1.jpg" alt="Galaxy S24">
+                    <h3>Galaxy S24</h3>
+                    <p>Innovación en cada detalle.</p>
+                    <button onclick="showDetails('Samsung Galaxy S24')">Ver más</button>
+                </div>
+                <div class="device-card">
+                    <img src="https://novoxperu.com/cdn/shop/files/XIAOMI14ULTRA.jpg?v=1716576541" alt="Xiaomi 14">
+                    <h3>Xiaomi 14 Ultra</h3>
+                    <p>Poder y estilo sin compromisos.</p>
+                    <button onclick="showDetails('Xiaomi 14 Ultra')">Ver más</button>
+                </div>
+            </div>
+        </section>
+        <!-- Device Details Section -->
+        <section id="device-details" class="device-details">
+            <div id="details-content">
+                <!-- Details will be inserted here by JS -->
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section id="services" class="services">
+            <div class="service-card">
+                <img src="https://images.samsung.com/is/image/samsung/assets/latin_en/apps/samsung-members/202312/members_dotcom_dotcom_kv_pc_6_1440x790.jpg?$1440_N_JPG$" alt="FAQs Background">
+                <div class="service-content">
+                    <h2>Preguntas Frecuentes</h2>
+                    <p>Encuentra respuestas a las dudas más comunes sobre tus dispositivos.</p>
+                    <a href="#" class="btn">Explorar FAQs</a>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="https://images.samsung.com/is/image/samsung/assets/latin_en/apps/2022-smart-switch/2023-04/smart-switch-section-06-pc-why-galaxy-2302.jpg?$1440_N_JPG$" alt="Manuals Background">
+                <div class="service-content">
+                    <h2>Manuales de Usuario</h2>
+                    <p>Descarga manuales y guías de uso para tus dispositivos.</p>
+                    <a href="#" class="btn">Descargar</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community -->
+        <section id="community" class="community">
+            <div class="community-content">
+                <h2>Únete a nuestra comunidad</h2>
+                <p>Comparte experiencias y obtén consejos de otros usuarios.</p>
+                <a href="#" class="btn">Explorar Comunidad</a>
+            </div>
+            <img src="https://images.samsung.com/is/image/samsung/assets/latin_en/apps/samsung-members/202312/members_dotcom_dotcom_kv_pc_4_1440x790.jpg?$1440_N_JPG$" alt="Community Background">
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Product & Service</h3>
+                <ul>
+                    <li><a href="#">Smartphones</a></li>
+                    <li><a href="#">Tablets</a></li>
+                    <li><a href="#">Audio Sound</a></li>
+                    <li><a href="#">Watches</a></li>
+                    <li><a href="#">Smart Switch</a></li>
+                    <li><a href="#">Mobile Accessories</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#">Store Locator</a></li>
+                    <li><a href="#">Explore</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Live Chat</a></li>
+                    <li><a href="#">Email Support</a></li>
+                    <li><a href="#">Phone Support</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">CEO Mail</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">Company Info</a></li>
+                    <li><a href="#">Business Area</a></li>
+                    <li><a href="#">Brand Identity</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Sustainability</h3>
+                <ul>
+                    <li><a href="#">Environment</a></li>
+                    <li><a href="#">Security & Privacy</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Diversity & Inclusion</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>@Yoskar Dante Perez.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

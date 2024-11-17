@@ -1,0 +1,373 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+a.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+a.btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Navbar */
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4C4CFF;
+    padding: 20px;
+
+}
+
+.navbar h1 {
+    color: white;
+    font-size: 2rem;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+}
+
+.navbar nav a:hover {
+    color: #FFD700; /* Amarillo dorado */
+    border-bottom: 2px solid #FFD700;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+/* Menú principal */
+.main-menu {
+    display: flex;
+    background-color: #333;
+    padding: 10px 20px;
+    gap: 1rem;
+    position: relative; /* Para posicionar el submenú relativo al menú */
+}
+
+
+.menu-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+}
+
+/* Contenedor de submenús */
+.submenu-container {
+    position: absolute;
+    top: 100%; /* Justo debajo del menú principal */
+    left: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    border-top: 2px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none; /* Oculto por defecto */
+    z-index: 1000;
+}
+
+.submenu {
+    display: none; /* Oculto por defecto */
+    padding: 10px 20px;
+}
+
+.submenu a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.submenu a:hover {
+    color: #007bff;
+}
+
+/* Mostrar el contenedor activo */
+.submenu-container.active {
+    display: block;
+}
+
+.submenu.active {
+    display: block;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #1a1a1a; /* Fondo oscuro */
+}
+
+.logo-container {
+    max-width: 150px; /* Ajusta el tamaño según sea necesario */
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 70vh;
+    background: #000;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.overlay-text h2 {
+    font-size: 3rem;
+}
+
+.overlay-text p {
+    font-size: 1.5rem;
+}
+
+.overlay-text a.btn {
+    margin-top: 1.5rem;
+}
+
+/* Device Section */
+.device-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.device-card {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.device-card:hover {
+    transform: scale(1.05);
+}
+
+.device-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.device-card button {
+    margin-top: 1.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.device-card button:hover {
+    background-color: #0056b3;
+}
+
+/* Device Details */
+.device-details {
+    background-color: #eee;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.device-details h2 {
+    font-size: 2.5rem;
+}
+
+.device-details p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 3rem 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 1rem;
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Community Section */
+.community {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    background-color: #4C4CFF;
+    color: white;
+}
+
+.community-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Service Section */
+.service-card {
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    padding: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para los logotipos */
+.brand-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 1rem 0;
+    background-color: #f9f9f9;
+}
+
+.brand-logos img {
+    max-height: 50px; /* Ajusta la altura de los logotipos */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.brand-logos img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.brand-logos img:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.brand-logos img {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@media (max-width: 768px) {
+    .device-grid {
+        grid-template-columns: 1fr; /* Una columna */
+    }
+
+    .brand-logos {
+        flex-wrap: wrap; /* Permite que los logotipos se reorganicen */
+        gap: 10px; /* Reduce el espacio */
+    }
+}
