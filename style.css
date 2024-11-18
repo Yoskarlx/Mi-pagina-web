@@ -34,16 +34,12 @@ a.btn:hover {
 }
 
 /* Navbar */
-
-
-
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #4C4CFF;
     padding: 20px;
-
 }
 
 .navbar h1 {
@@ -55,11 +51,11 @@ a.btn:hover {
     color: white;
     text-decoration: none;
     margin: 0 1rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem; /* Aumento del tamaño de fuente en el menú */
 }
 
 .navbar nav a:hover {
-    color: #FFD700; /* Amarillo dorado */
+    color: #FFD700;
     border-bottom: 2px solid #FFD700;
     transition: color 0.3s, border-bottom 0.3s;
 }
@@ -70,32 +66,32 @@ a.btn:hover {
     background-color: #333;
     padding: 10px 20px;
     gap: 1rem;
-    position: relative; /* Para posicionar el submenú relativo al menú */
+    position: relative;
+    flex-wrap: wrap; /* Asegura que el menú sea más flexible en pantallas pequeñas */
 }
-
 
 .menu-item a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.4rem; /* Aumento de la fuente */
     padding: 10px 15px;
 }
 
 /* Contenedor de submenús */
 .submenu-container {
     position: absolute;
-    top: 100%; /* Justo debajo del menú principal */
+    top: 100%;
     left: 0;
     width: 100%;
     background-color: #f9f9f9;
     border-top: 2px solid #ddd;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: none; /* Oculto por defecto */
+    display: none;
     z-index: 1000;
 }
 
 .submenu {
-    display: none; /* Oculto por defecto */
+    display: none;
     padding: 10px 20px;
 }
 
@@ -110,7 +106,6 @@ a.btn:hover {
     color: #007bff;
 }
 
-/* Mostrar el contenedor activo */
 .submenu-container.active {
     display: block;
 }
@@ -124,11 +119,11 @@ a.btn:hover {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: #1a1a1a; /* Fondo oscuro */
+    background-color: #1a1a1a;
 }
 
 .logo-container {
-    max-width: 150px; /* Ajusta el tamaño según sea necesario */
+    max-width: 120px; /* Reducir el tamaño del logo */
 }
 
 .logo {
@@ -331,7 +326,7 @@ footer {
 }
 
 .brand-logos img {
-    max-height: 50px; /* Ajusta la altura de los logotipos */
+    max-height: 40px; /* Reducción del tamaño de los logos */
     transition: transform 0.3s ease, opacity 0.3s ease;
     cursor: pointer;
 }
@@ -346,124 +341,41 @@ footer {
     transform: scale(1.1);
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.brand-logos img {
-    animation: fadeIn 0.5s ease-in;
-}
-
-@media (max-width: 768px) {
-    .device-grid {
-        grid-template-columns: 1fr; /* Una columna */
-    }
-
-    .brand-logos {
-        flex-wrap: wrap; /* Permite que los logotipos se reorganicen */
-        gap: 10px; /* Reduce el espacio */
-    }
-}
-/* Mobile (por debajo de 768px) */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .navbar h1 {
-        font-size: 1.5rem;
-    }
-    
+/* Media Queries for Mobile Devices */
+@media screen and (max-width: 768px) {
     .navbar nav a {
-        font-size: 1rem;
-        margin: 0.5rem 0;
+        font-size: 1.1rem; /* Reducir aún más el tamaño del texto en pantallas pequeñas */
+        margin: 0 0.5rem;
     }
 
-    .hero {
-        height: 50vh;
+    .main-menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
     }
 
-    .overlay-text h2 {
-        font-size: 2rem;
-    }
-
-    .overlay-text p {
+    .main-menu .menu-item a {
         font-size: 1.2rem;
     }
 
     .device-grid {
-        grid-template-columns: 1fr; /* Una columna en móviles */
+        grid-template-columns: 1fr; /* Pantalla pequeña: una columna */
     }
 
-    .device-card {
-        padding: 1rem;
+    .logo-container {
+        max-width: 100px; /* Hacer el logo aún más pequeño en pantallas pequeñas */
     }
 
-    .brand-logos a img {
-        width: 50px; /* Reduces el tamaño de los logos */
-    }
-
-    .footer-column {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 1rem;
-    }
-}
-
-/* Tablet (por debajo de 1024px) */
-@media (max-width: 1024px) {
-    .device-grid {
-        grid-template-columns: repeat(2, 1fr); /* Dos columnas en tabletas */
-    }
-
-    .overlay-text h2 {
+    .hero .overlay-text h2 {
         font-size: 2.5rem;
     }
 
-    .overlay-text p {
-        font-size: 1.4rem;
-    }
-
-    .device-card {
-        padding: 1.5rem;
-    }
-    
-    .brand-logos a img {
-        width: 80px; /* Ajusta los logos */
-    }
-}
-
-/* Escritorio (pantallas grandes, desde 1025px en adelante) */
-@media (min-width: 1025px) {
-    .navbar {
-        flex-direction: row;
-    }
-
-    .navbar nav a {
+    .hero .overlay-text p {
         font-size: 1.2rem;
     }
 
-    .hero {
-        height: 70vh;
-    }
-
-    .device-grid {
-        grid-template-columns: repeat(3, 1fr); /* Tres columnas en escritorios */
-    }
-
-    .device-card {
-        padding: 2rem;
-    }
-
-    .brand-logos a img {
-        width: 100px; /* Ajusta el tamaño de los logos para pantallas grandes */
+    .community {
+        flex-direction: column;
+        align-items: center;
     }
 }
