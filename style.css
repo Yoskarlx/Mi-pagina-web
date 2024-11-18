@@ -371,3 +371,99 @@ footer {
         gap: 10px; /* Reduce el espacio */
     }
 }
+/* Mobile (por debajo de 768px) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .navbar h1 {
+        font-size: 1.5rem;
+    }
+    
+    .navbar nav a {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .overlay-text h2 {
+        font-size: 2rem;
+    }
+
+    .overlay-text p {
+        font-size: 1.2rem;
+    }
+
+    .device-grid {
+        grid-template-columns: 1fr; /* Una columna en móviles */
+    }
+
+    .device-card {
+        padding: 1rem;
+    }
+
+    .brand-logos a img {
+        width: 50px; /* Reduces el tamaño de los logos */
+    }
+
+    .footer-column {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Tablet (por debajo de 1024px) */
+@media (max-width: 1024px) {
+    .device-grid {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en tabletas */
+    }
+
+    .overlay-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .overlay-text p {
+        font-size: 1.4rem;
+    }
+
+    .device-card {
+        padding: 1.5rem;
+    }
+    
+    .brand-logos a img {
+        width: 80px; /* Ajusta los logos */
+    }
+}
+
+/* Escritorio (pantallas grandes, desde 1025px en adelante) */
+@media (min-width: 1025px) {
+    .navbar {
+        flex-direction: row;
+    }
+
+    .navbar nav a {
+        font-size: 1.2rem;
+    }
+
+    .hero {
+        height: 70vh;
+    }
+
+    .device-grid {
+        grid-template-columns: repeat(3, 1fr); /* Tres columnas en escritorios */
+    }
+
+    .device-card {
+        padding: 2rem;
+    }
+
+    .brand-logos a img {
+        width: 100px; /* Ajusta el tamaño de los logos para pantallas grandes */
+    }
+}
