@@ -6,6 +6,7 @@ body {
     color: #333;
     padding: 0;
     line-height: 1.6;
+    overflow: hidden; /* Evita que el usuario pueda desplazarse */
 }
 
 h2 {
