@@ -9,6 +9,10 @@ body {
     overflow: hidden; /* Evita que el usuario pueda desplazarse */
 }
 
+body::-webkit-scrollbar {
+    display: none; /* Oculta la barra de desplazamiento */
+}
+
 h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
