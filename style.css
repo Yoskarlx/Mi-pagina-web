@@ -13,13 +13,6 @@ body::-webkit-scrollbar {
     height: 0; /* Sin efecto para desplazamiento horizontal */
 }
 
-/* Opcional: Para navegadores antiguos como IE */
-body {
-    -ms-overflow-style: none; /* Para IE */
-}
-
-/* Para un diseño más limpio, ajusta márgenes o anchos de elementos */
-
 h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
