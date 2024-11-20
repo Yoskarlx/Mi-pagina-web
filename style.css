@@ -6,6 +6,14 @@ body {
     color: #333;
     padding: 0;
     line-height: 1.6;
+    overflow-x: hidden; /* Oculta cualquier desplazamiento horizontal */
+    margin: 0; /* Asegura que no haya espacio no deseado */
+}
+
+/* General adjustments to ensure content stays within the viewport */
+.container {
+    width: 100%; /* Asegura que los contenedores no excedan el ancho de la pantalla */
+    box-sizing: border-box; /* Incluye paddings y bordes dentro del ancho total */
 }
 
 h2 {
@@ -379,4 +387,5 @@ footer {
         align-items: center;
     }
 }
+
 
