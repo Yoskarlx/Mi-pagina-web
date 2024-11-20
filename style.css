@@ -8,12 +8,6 @@ body {
     line-height: 1.6;
 }
 
-body {
-    overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
-    overflow-y: auto; /* Permite la barra de desplazamiento vertical */
-}
-
-/* Elimina visualmente el scrollbar horizontal en navegadores modernos */
 body::-webkit-scrollbar {
     width: 0; /* Sin efecto para desplazamiento horizontal */
     height: 0; /* Sin efecto para desplazamiento horizontal */
