@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispositivos - TechNova</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/042/760/565/non_2x/phone-icon-design-graphic-resource-vector.jpg" alt="Apple Logo" title="Apple"> 
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+  
+
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+.main-menu {
+    display: flex;
+    list-style: none;
+}
+
+.main-menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.main-menu a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+.main-menu a.active {
+    background-color: #007aff;
+    color: #fff;
+}
+
+        .parallax {
+            height: 400px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .section {
+            margin: 100px auto;
+            padding: 60px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 1400px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .section {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+        .swiper-slide {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide:hover {
+    transform: scale(1.05);
+}
+
+.swiper-slide img {
+    transition: transform 0.3s ease;
+    max-width: 100%; /* Hace que las imágenes no se desborden */
+        max-height: 300px; /* Limita la altura máxima */
+        border-radius: 10px;
+        object-fit: contain; /* Mantiene la proporción de las imágenes sin distorsionar */
+        width: 100%;
+        display: block;
+        height: auto;
+}
+
+.swiper-slide p {
+        margin-top: 10px;
+        font-size: 16px;
+        color: #333;
+        padding: 0 10px;
+    }
+
+.swiper-slide:hover img {
+    transform: scale(1.1);
+}
+
+.product-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: opacity 0.3s ease;
+}
+
+.product-info p {
+        font-size: 14px;
+    }
+
+.swiper-slide:hover .product-info {
+    display: flex;
+    opacity: 1;
+}
+
+.buy-btn {
+    background-color: #007aff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: #005bb5;
+}
+
+footer { background-color: #333; color: #fff; padding: 40px 0; text-align: left; } .footer-container { display: flex; justify-content: space-around; flex-wrap: wrap; } .footer-column { flex: 1; margin: 10px; min-width: 200px; } .footer-column h4 { margin-bottom: 10px; font-size: 18px; color: #fff; } .footer-column ul { list-style: none; padding: 0; } .footer-column ul li { margin-bottom: 8px; } .footer-column ul li a { color: #fff; text-decoration: none; } .footer-column ul li a:hover { text-decoration: underline; } .footer-bottom { text-align: center; margin-top: 20px; }
+
+        .swiper-button-next, .swiper-button-prev {
+    background-color: #007aff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background-color: #005bb5;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>TechNova</h1>
+            <nav class="main-menu">
+                <a href="index.html" class="active">Inicio</a>
+                <a href="devices.html">Dispositivos</a>
+                <a href="#services">Servicios</a>
+                <a href="#community">Comunidad</a>
+                <a href="#contact">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Fondo Parallax Apple -->
+    <div class="parallax" style="background-image: url('https://www.notebookcheck.org/fileadmin/Notebooks/News/_nc3/Apple-iPhone-16-und-iPhone-16-Pro-Bereits-jetzt-sind-konkrete-Masse-und-Gewicht-aller-vier-iPhone-15-Nachfolger-geleakt.jpg');"></div>
+
+    <!-- Sección Apple -->
+    <!-- Sección Apple -->
+<section class="section">
+    <h3>Apple</h3>
+    <div class="swiper apple">
+        <div class="swiper-wrapper">
+            <!-- Producto: iPhone 16 Pro -->
+            <div class="swiper-slide">
+                <img src="https://www.apple.com/newsroom/images/2024/09/apple-debuts-iphone-16-pro-and-iphone-16-pro-max/article/Apple-iPhone-16-Pro-hero-240909_inline.jpg.large.jpg" alt="iPhone 16 Pro">
+                    <p><strong>iPhone 16 Pro</strong><br>Potencia y diseño avanzado<br><strong>Precio:</strong> $1,099</p>
+                    <button class="buy-btn" onclick="buyProduct('iPhone 16 Pro')">Comprar</button>
+                    <div class="product-info" id="info-iphone16pro">
+                        <p><strong>Descripción:</strong> El iPhone 16 Pro cuenta con un procesador A17, cámaras avanzadas y una pantalla ProMotion de 120Hz.</p>
+                    </div>
+                    <div class="buy-message" id="buy-message-iphone16pro"></div>
+            </div>
+
+            <!-- Producto: iPhone 16 -->
+            <div class="swiper-slide">
+                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-model-unselect-gallery-2-202409_GEO_US?wid=5120&hei=2880&fmt=webp&qlt=70&.v=ZnlzVUZzRWd3dlg0RllqbHhQSUpKTGdzSmpObkZCM3MrNmJ5SkhESlNDZ1FydVY5cEpsVTdwMmk5U2U2UXBQVThLcXQxZ1h0QThIT2dnUm5qbGk5OUJkSERIUjY1Wk1Od3FtNjF6NFZLVXZtZEowT3Fwbmhld1JjblRvOVpZeVcwTko2SW91TzhmREJLUUxPTmhpZ1NB&traceId=1" alt="iPhone 16">
+                    <p><strong>iPhone 16</strong><br>Innovación y potencia<br><strong>Precio:</strong> $899</p>
+                    <button class="buy-btn" onclick="buyProduct('iPhone 16')">Comprar</button>
+                    <div class="product-info" id="info-iphone16">
+                        <p><strong>Descripción:</strong> Con la nueva cámara de 48 MP y el chip A16 Bionic, es una opción ideal para el día a día.</p>
+                    </div>
+                    <div class="buy-message" id="buy-message-iphone16"></div>
+            </div>
+
+            <!-- Producto: Apple Watch Series 10 -->
+            <div class="swiper-slide">
+                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/s10-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80&.v=1724620940808" alt="Apple Watch Series 10">
+                <p><strong>Apple Watch Series 10</strong><br>Seguimiento de salud avanzado<br><strong>Precio:</strong> $399</p>
+                <a href="#comprar-watch10" style="color: #007aff; text-decoration: none;">Comprar</a>
+            </div>
+
+            <!-- Producto: iPad mini -->
+            <div class="swiper-slide">
+                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-unselect-gallery-1-202410?wid=5120&hei=2880&fmt=webp&qlt=70&.v=eDJDc00wczl1QWk5QmpVYitFNXQwOVgrSXpWVEhWaW9YTGlWRHFoSHU0L1BqbTR3VEdKRWdqMUVib1BPSWdhYWd2S3NaRzcrU0dmYjNHTUFiMnlsWFRocXAvNjVVaCtjTTZGTUNzOU8wNkVyNS9FSzFhNVRJSXdZQnFCMkJ5K2E&traceId=1" alt="iPad mini">
+                <p><strong>iPad mini</strong><br>Compacto y poderoso<br><strong>Precio:</strong> $499</p>
+                <a href="#comprar-ipadmini" style="color: #007aff; text-decoration: none;">Comprar</a>
+            </div>
+
+            <!-- Producto: MacBook Pro -->
+            <div class="swiper-slide">
+                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp16-spaceblack-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1728916322507" alt="MacBook Pro">
+                <p><strong>MacBook Pro</strong><br>Rendimiento sin igual<br><strong>Precio:</strong> $2,199</p>
+                <a href="#comprar-macbookpro" style="color: #007aff; text-decoration: none;">Comprar</a>
+            </div>
+
+            <!-- Producto: Apple Watch Ultra 2 -->
+            <div class="swiper-slide">
+                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ultra-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80&.v=1723905863222" alt="Apple Watch Ultra 2">
+                <p><strong>Apple Watch Ultra 2</strong><br>Para los más exigentes<br><strong>Precio:</strong> $799</p>
+                <a href="#comprar-watchultra2" style="color: #007aff; text-decoration: none;">Comprar</a>
+            </div>
+
+            <!-- Producto: iMac -->
+            <div class="swiper-slide">
+                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/imac-blue-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1730232515462" alt="iMac">
+                <p><strong>iMac</strong><br>Estilo y rendimiento<br><strong>Precio:</strong> $1,299</p>
+                <a href="#comprar-imac" style="color: #007aff; text-decoration: none;">Comprar</a>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+
+    <!-- Fondo Parallax Samsung -->
+    <div class="parallax" style="background-image: url('https://images.samsung.com/is/image/samsung/assets/latin/2024-09-25/New-Desktop_GalaxyS24-FE.jpg?imwidth=2560');"></div>
+
+    <!-- Sección Samsung -->
+    <!-- Sección Samsung -->
+<section class="section">
+    <h3>Samsung</h3>
+    <div class="swiper samsung">
+        <div class="swiper-wrapper">
+            <!-- Producto: Galaxy S24 FE -->
+            <div class="swiper-slide">
+                <img src="https://shop.samsung.com/latin/pub/media/catalog/product/cache/a69170b4a4f0666a52473c2224ba9220/s/m/sm-s721_ef-ps721c_1.png" alt="Galaxy S24 FE">
+                <p><strong>Galaxy S24 FE</strong><br>Calidad y rendimiento<br><strong>Precio:</strong> $599</p>
+                <a href="#comprar-s24fe" style="color: #007aff; text-decoration: none;">Comprar</a>
+            </div>
+
+            <!-- Producto: Galaxy S24 Plus -->
+            <div class="swiper-slide">
+                <img src="https://shop.samsung.com/latin/pub/media/catalog/product/cache/a69170b4a4f0666a52473c2224ba9220/0/0/00-sm-s928_galaxys24ultra_all-logo_4_3.png" alt="Galaxy S24 Plus">
+                <p><strong>Galaxy S24 Plus</strong><br>Elegancia y tecnología<br><strong>Precio:</strong> $999</p>
+                <a href="#comprar-s24plus" style="color: #007aff; text-decoration: none;">Comprar</a>
+            </div>
+
+            <!-- Producto: Galaxy S24 -->
+            <div class="swiper-slide">
+                <img src="https://shop.samsung.com/latin/pub/media/catalog/product/cache/a69170b4a4f0666a52473c2224ba9220/0/0/00-sm-s926_galaxys24plus_all-logo_1_1_3.png" alt="Galaxy S24">
+                <p><strong>Galaxy S24</strong><br>Potencia en tus manos<br><strong>Precio:</strong> $799</p>
+                <a href="#comprar-s24" style="color: #007aff; text-decoration: none;">Comprar</a>
+            </div>
+
+            <!-- Producto: Galaxy S23 -->
+            <div class="swiper-slide">
+                <img src="https://shop.samsung.com/latin/pub/media/catalog/product/cache/a69170b4a4f0666a52473c2224ba9220/s/m/sm-s711_3.png" alt="Galaxy S23">
+                <p><strong>Galaxy S23</strong><br>Rendimiento sólido<br><strong>Precio:</strong> $699</p>
+                <a href="#comprar-s23" style="color: #007aff; text-decoration: none;">Comprar</a>
+            </div>
+
+            <!-- Producto: Galaxy Tab S10 Ultra -->
+            <div class="swiper-slide">
+                <img src="https://shop.samsung.com/latin/pub/media/catalog/product/cache/a69170b4a4f0666a52473c2224ba9220/s/m/sm-x920n_galaxy-tab-s10ultra_00.png" alt="Galaxy Tab S10 Ultra">
+                <p><strong>Galaxy Tab S10 Ultra</strong><br>Potencia en una tableta<br><strong>Precio:</strong> $1,199</p>
+                <a href="#comprar-tab10ultra" style="color: #007aff; text-decoration: none;">Comprar</a>
+            </div>
+
+            <!-- Producto: Galaxy Watch7 -->
+            <div class="swiper-slide">
+                <img src="https://shop.samsung.com/latin/pub/media/catalog/product/cache/a69170b4a4f0666a52473c2224ba9220/0/0/00-sm-l310-sm-l315_001_front_all.png" alt="Galaxy Watch7">
+                <p><strong>Galaxy Watch7</strong><br>Diseño y funcionalidad<br><strong>Precio:</strong> $399</p>
+                <a href="#comprar-watch7" style="color: #007aff; text-decoration: none;">Comprar</a>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+
+    <!-- Fondo Parallax Xiaomi -->
+    <div class="parallax" style="background-image: url('https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-14t-pro/PC/header_kv.jpg?f=webp');"></div>
+
+    <!-- Sección Xiaomi -->
+    <!-- Sección Xiaomi -->
+<section class="section">
+    <h3>Xiaomi</h3>
+    <div class="swiper xiaomi">
+        <div class="swiper-wrapper">
+            <!-- Producto: Xiaomi MIX Flip -->
+            <div class="swiper-slide">
+                <img src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-mix-flip/global/pc/pc-index-bg.png?f=webp" alt="Xiaomi MIX Flip">
+                <p><strong>Xiaomi MIX Flip</strong><br>Diseño plegable revolucionario<br><strong>Precio:</strong> $1,099</p>
+                <a href="#comprar-mixflip" style="color: #007aff; text-decoration: none;">Comprar</a>
+            </div>
+
+            <!-- Producto: Xiaomi 14T Pro -->
+            <div class="swiper-slide">
+                <img src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-14t-pro/PC/header_kv.jpg?f=webp" alt="Xiaomi 14T Pro">
+                <p><strong>Xiaomi 14T Pro</strong><br>Potencia y elegancia<br><strong>Precio:</strong> $849</p>
+                <a href="#comprar-14tpro" style="color: #007aff; text-decoration: none;">Comprar</a>
+            </div>
+
+            <!-- Producto: Xiaomi 14 Ultra -->
+            <div class="swiper-slide">
+                <img src="https://i02.appmifile.com/mi-com-product/fly-birds/new-xiaomi-14-ultra/PC/pc-14ultra-header.jpg?f=webp" alt="Xiaomi 14 Ultra">
+                <p><strong>Xiaomi 14 Ultra</strong><br>Innovación al alcance<br><strong>Precio:</strong> $1,199</p>
+                <a href="#comprar-14ultra" style="color: #007aff; text-decoration: none;">Comprar</a>
+            </div>
+
+            <!-- Producto: POCO F6 -->
+            <div class="swiper-slide">
+                <img src="https://i02.appmifile.com/mi-com-product/fly-birds/poco-f6/PC/44726d5abef8ddfc1866f273af249552.jpg?f=webp" alt="POCO F6">
+                <p><strong>POCO F6</strong><br>Rendimiento asequible<br><strong>Precio:</strong> $499</p>
+                <a href="#comprar-pocof6" style="color: #007aff; text-decoration: none;">Comprar</a>
+            </div>
+
+            <!-- Producto: Xiaomi Pad 6S Pro -->
+            <div class="swiper-slide">
+                <img src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-pad-6s-pro-124/pc/e22707982190cc2587fde3afa3d54567.jpg?f=webp" alt="Xiaomi Pad 6S Pro">
+                <p><strong>Xiaomi Pad 6S Pro</strong><br>Potencia en una tableta<br><strong>Precio:</strong> $699</p>
+                <a href="#comprar-pad6spro" style="color: #007aff; text-decoration: none;">Comprar</a>
+            </div>
+
+            <!-- Producto: Xiaomi Watch S3 -->
+            <div class="swiper-slide">
+                <img src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-pad-6s-pro-124/pc/e22707982190cc2587fde3afa3d54567.jpg?f=webp" alt="Xiaomi Watch S3">
+                <p><strong>Xiaomi Watch S3</strong><br>Estilo y funcionalidad<br><strong>Precio:</strong> $299</p>
+                <a href="#comprar-watchs3" style="color: #007aff; text-decoration: none;">Comprar</a>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+
+<footer> <div class="footer-container"> <div class="footer-column"> <h4>Product & Service</h4> <ul> <li><a href="#">Smartphones</a></li> <li><a href="#">Tablets</a></li> <li><a href="#">Audio Sound</a></li> <li><a href="#">Watches</a></li> <li><a href="#">Smart Switch</a></li> <li><a href="#">Mobile Accessories</a></li> </ul> </div> <div class="footer-column"> <h4>Shop</h4> <ul> <li><a href="#">Offers</a></li> <li><a href="#">Store Locator</a></li> <li><a href="#">Explore</a></li> </ul> </div> <div class="footer-column"> <h4>Support</h4> <ul> <li><a href="#">Live Chat</a></li> <li><a href="#">Email Support</a></li> <li><a href="#">Phone Support</a></li> <li><a href="#">Community</a></li> <li><a href="#">CEO Mail</a></li> </ul> </div> <div class="footer-column"> <h4>About Us</h4> <ul> <li><a href="#">Company Info</a></li> <li><a href="#">Business Area</a></li> <li><a href="#">Brand Identity</a></li> <li><a href="#">Careers</a></li> <li><a href="#">Investor Relations</a></li> </ul> </div> <div class="footer-column"> <h4>Sustainability</h4> <ul> <li><a href="#">Environment</a></li> <li><a href="#">Security & Privacy</a></li> <li><a href="#">Accessibility</a></li> <li><a href="#">Diversity & Inclusion</a></li> </ul> </div> </div> <div class="footer-bottom"> <p>@Yoskar Dante Perez.</p> </div> </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const appleSwiper = new Swiper('.apple', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        const samsungSwiper = new Swiper('.samsung', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        const xiaomiSwiper = new Swiper('.xiaomi', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        function buyProduct(productName) {
+            document.getElementById('buy-message-' + productName.replace(' ', '').toLowerCase()).innerText = "¡Producto comprado!";
+        }
+
+        document.querySelectorAll('.swiper-slide').forEach(item => {
+            item.addEventListener('click', function () {
+                const productId = item.querySelector('button').getAttribute('onclick').split("'")[1];
+                const productInfo = document.getElementById('info-' + productId.replace(' ', '').toLowerCase());
+                productInfo.style.display = productInfo.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+
+        document.addEventListener('scroll', function() {
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => {
+        if (section.getBoundingClientRect().top < window.innerHeight) {
+            section.classList.add('visible');
+        }
+    });
+});
+
+document.querySelectorAll('.swiper-slide').forEach(item => {
+    item.addEventListener('click', function () {
+        const productId = item.querySelector('button').getAttribute('onclick').split("'")[1];
+        const productInfo = document.getElementById('info-' + productId.replace(' ', '').toLowerCase());
+        toggleVisibility(productInfo);
+    });
+});
+
+function toggleVisibility(element) {
+    element.style.display = element.style.display === 'block' ? 'none' : 'block';
+}
+
+
+    </script>
+</body>
+</html>
