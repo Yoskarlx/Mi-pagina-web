@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="contacto.css">
+    <!-- Enlace a Font Awesome para los íconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/042/760/565/non_2x/phone-icon-design-graphic-resource-vector.jpg" alt="Apple Logo" title="Apple"> >
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4b4b4b;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #0078d4;
+}
+
+/* Header Section */
+.contact-header {
+    text-align: center;
+    background-color: #0078d4;
+    color: white;
+    padding: 40px 20px;
+}
+
+.contact-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.contact-header p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Contact Information Section */
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.info-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.info-item i {
+    color: #0078d4;
+    margin-bottom: 10px;
+}
+
+.info-item h2 {
+    font-size: 1.8rem;
+    color: #0078d4;
+    margin-bottom: 15px;
+}
+
+.info-item p {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.info-item a {
+    color: #0078d4;
+    text-decoration: none;
+}
+
+.info-item a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Section */
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 10px;
+    margin-top: 40px;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+        <div class="logo">TechNova</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="devices.html">Dispositivos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="comunidad.html">Comunidad</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Título principal -->
+    <header class="contact-header">
+        <h1>Contáctanos</h1>
+        <p>Estamos aquí para ayudarte. No dudes en contactarnos a través de cualquiera de los siguientes medios.</p>
+    </header>
+
+    <!-- Información de contacto -->
+    <section class="contact-info">
+        <div class="info-item">
+            <i class="fas fa-phone-alt fa-3x"></i>
+            <h2>Teléfono</h2>
+            <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+        </div>
+        <div class="info-item">
+            <i class="fas fa-envelope fa-3x"></i>
+            <h2>Correo Electrónico</h2>
+            <p><a href="mailto:contacto@technova.com">contacto@technova.com</a></p>
+        </div>
+        <div class="info-item">
+            <i class="fas fa-hashtag fa-3x"></i>
+            <h2>Redes Sociales</h2>
+            <p>
+                <a href="https://www.facebook.com/people/YonisGeneral/61551621763053/?rdid=C6Z7BXC5YWdjhP2L&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Aia7KANNe%2F" target="_blank">Facebook</a> |
+                <a href="https://www.instagram.com/technova098/?next=%2Ftechnova098%2Fprofilecard%2F" target="_blank">Instagram</a>
+            </p>
+        </div>
+        <div class="info-item">
+            <i class="fas fa-map-marker-alt fa-3x"></i>
+            <h2>Dirección</h2>
+            <p>Ciudad juan bosch, Santo Domingo Este, República Dominicana</p>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>&copy; 2024 TechNova. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
